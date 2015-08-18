@@ -88,6 +88,8 @@ FOOTER
 ***************************/
 
 footer {
+  position:absolute;
+  bottom:0;
   font-size: 0.75em;
   text-align: center;
   clear: both;
