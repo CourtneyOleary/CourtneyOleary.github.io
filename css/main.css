@@ -173,8 +173,8 @@ PAGE: CONTACT
   background-image: url('../img/mail.png');
 }
 
-.contact-info li.twitter a {
-  background-image: url('../img/twitter.png');
+.contact-info li.facebook a {
+  background-image: url('../img/facebook-b_130x50.png');
 }
 
 
