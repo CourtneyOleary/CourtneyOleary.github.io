@@ -114,6 +114,7 @@ PAGE: PORTFOLIO
   margin: 0;
   padding: 0;
   list-style: none;
+  text-align: center;
   
 }
 
@@ -123,6 +124,7 @@ PAGE: PORTFOLIO
   margin: 2.5%;
   background-color: #eee;
   color: #bdc3c7;
+  vertical-align: top;
 
 }
 
