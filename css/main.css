@@ -115,17 +115,23 @@ PAGE: PORTFOLIO
   padding: 0;
   list-style: none;
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
   
 }
 
 #gallery li {
   float: left;
-  width: 45%;
+  width: 28.3333%;
   margin: 2.5%;
   background-color: #eee;
   color: #bdc3c7;
-  vertical-align: top;
+  text-align: center;
+  
+}
 
+#gallery li.games{
+  vertical-align: middle;
 }
 
 #gallery li a p {
@@ -136,9 +142,15 @@ PAGE: PORTFOLIO
 }
 
 
+
 /***************************
 PAGE: About
 ***************************/
+
+section {
+  text-align: center;
+
+}
 
 .profile-photo {
   display: block;
@@ -146,6 +158,8 @@ PAGE: About
   margin: 0 auto 30px;
   border-radius: 100%;
 }
+
+
 
 /***************************
 PAGE: CONTACT
