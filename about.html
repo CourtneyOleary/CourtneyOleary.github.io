@@ -28,16 +28,55 @@
       <section>
         <div class="iframe">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/zt3iSBLinjc" frameborder="0" allowfullscreen class="band-video"></iframe></div>
-      </section>
+      
       </div>
       <div id="caption">
         <p>This is the song. It is nice.</p>
+        <p></p>
+        <p>Maybe you'd like to draw a picture below? We give thanks to Sketch.js</p>
       </div>
-      <div class="footwrap">
+      <div class="drawbox">
+        <canvas id="simple_sketch" width="800" height="300" style="border: 1px solid black"></canvas>
+
+      </div>
+      </section>
+      <div>
         <footer>
            <a href="http://www.stormforge.bandcamp.com"><img src="https://s1.bcbits.com/img/buttons/bandcamp_22x22_black.png"></a>
         <p>&copy; 2015 Courtney O'Leary</p>
       </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/sketch.js"></script>
+    <script type="text/javascript">
+      $(function() {
+      $('#simple_sketch').sketch();
+      });
+    </script>
+    <script type="text/javascript">
+        (function() {
+    var canvas = document.getElementById('simple_sketch'),
+            context = canvas.getContext('2d');
+
+    // resize the canvas to fill browser window dynamically
+    window.addEventListener('resize', resizeCanvas, false);
+
+    function resizeCanvas() {
+            canvas.width = window.innerWidth*0.8;
+            canvas.height = window.innerHeight;
+
+            /**
+             * Your drawings need to be inside this function otherwise they will be reset when 
+             * you resize the browser window and the canvas goes will be cleared.
+             */
+            drawStuff(); 
+    }
+    resizeCanvas();
+
+    function drawStuff() {
+            // do your drawing stuff here
+    }
+})();
+      </script>>
   </body>
 </html>
